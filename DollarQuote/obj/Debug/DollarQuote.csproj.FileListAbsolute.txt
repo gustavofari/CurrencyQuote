@@ -1,0 +1,13 @@
+C:\Users\gusta\source\repos\DollarQuote\DollarQuote\bin\Debug\DollarQuote.exe.config
+C:\Users\gusta\source\repos\DollarQuote\DollarQuote\bin\Debug\DollarQuote.exe
+C:\Users\gusta\source\repos\DollarQuote\DollarQuote\bin\Debug\DollarQuote.pdb
+C:\Users\gusta\source\repos\DollarQuote\DollarQuote\obj\Debug\DollarQuote.csproj.AssemblyReference.cache
+C:\Users\gusta\source\repos\DollarQuote\DollarQuote\obj\Debug\DollarQuote.FrmDollarQuote.resources
+C:\Users\gusta\source\repos\DollarQuote\DollarQuote\obj\Debug\DollarQuote.Properties.Resources.resources
+C:\Users\gusta\source\repos\DollarQuote\DollarQuote\obj\Debug\DollarQuote.csproj.GenerateResource.cache
+C:\Users\gusta\source\repos\DollarQuote\DollarQuote\obj\Debug\DollarQuote.csproj.CoreCompileInputs.cache
+C:\Users\gusta\source\repos\DollarQuote\DollarQuote\obj\Debug\DollarQuote.exe
+C:\Users\gusta\source\repos\DollarQuote\DollarQuote\obj\Debug\DollarQuote.pdb
+C:\Users\gusta\source\repos\DollarQuote\DollarQuote\bin\Debug\Newtonsoft.Json.dll
+C:\Users\gusta\source\repos\DollarQuote\DollarQuote\bin\Debug\Newtonsoft.Json.xml
+C:\Users\gusta\source\repos\DollarQuote\DollarQuote\obj\Debug\DollarQuote.csproj.CopyComplete
