@@ -11,3 +11,4 @@ C:\Users\gusta\source\repos\DollarQuote\DollarQuote\obj\Debug\DollarQuote.pdb
 C:\Users\gusta\source\repos\DollarQuote\DollarQuote\bin\Debug\Newtonsoft.Json.dll
 C:\Users\gusta\source\repos\DollarQuote\DollarQuote\bin\Debug\Newtonsoft.Json.xml
 C:\Users\gusta\source\repos\DollarQuote\DollarQuote\obj\Debug\DollarQuote.csproj.CopyComplete
+C:\Users\gusta\source\repos\DollarQuote\DollarQuote\bin\Debug\CeFramework_free.dll

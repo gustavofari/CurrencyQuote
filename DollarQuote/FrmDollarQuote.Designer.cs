@@ -24,6 +24,7 @@ namespace DollarQuote {
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -32,6 +33,9 @@ namespace DollarQuote {
             this.LabelBuyDollar = new System.Windows.Forms.Label();
             this.LabelSellDollar = new System.Windows.Forms.Label();
             this.LabelVariation = new System.Windows.Forms.Label();
+            this.loadingScreen = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.loadingScreen)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -123,11 +127,26 @@ namespace DollarQuote {
             this.LabelVariation.Text = "0,0";
             this.LabelVariation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // loadingScreen
+            // 
+            this.loadingScreen.Image = global::DollarQuote.Properties.Resources.icon_loading_blue;
+            this.loadingScreen.Location = new System.Drawing.Point(12, 135);
+            this.loadingScreen.Name = "loadingScreen";
+            this.loadingScreen.Size = new System.Drawing.Size(576, 260);
+            this.loadingScreen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.loadingScreen.TabIndex = 8;
+            this.loadingScreen.TabStop = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // FrmDollarQuote
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 504);
+            this.Controls.Add(this.loadingScreen);
             this.Controls.Add(this.LabelVariation);
             this.Controls.Add(this.LabelSellDollar);
             this.Controls.Add(this.LabelBuyDollar);
@@ -142,6 +161,8 @@ namespace DollarQuote {
             this.Name = "FrmDollarQuote";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Currency Quote";
+            this.Load += new System.EventHandler(this.FrmDollarQuote_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.loadingScreen)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -157,6 +178,8 @@ namespace DollarQuote {
         private System.Windows.Forms.Label LabelBuyDollar;
         private System.Windows.Forms.Label LabelSellDollar;
         private System.Windows.Forms.Label LabelVariation;
+        private System.Windows.Forms.PictureBox loadingScreen;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

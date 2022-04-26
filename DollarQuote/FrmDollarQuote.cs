@@ -1,29 +1,33 @@
 ﻿using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Globalization;
-using System.Linq;
 using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DollarQuote {
     public partial class FrmDollarQuote : Form {
+
+        int time = 0;
+
         public FrmDollarQuote() {
+
             InitializeComponent();
+            loadingScreen.Visible = false;
+            
         }
 
         private void btnSearch_Click(object sender, EventArgs e) {
 
+            time = 0;
+            loadingScreen.Visible = true;
+            timer1.Enabled = true;
+
             const string strURL = "https://api.hgbrasil.com/finance?array_limit=1&fields=only_results,USD&key=25b84a2e";
-            
+
             using (HttpClient client = new HttpClient()) {
 
                 try {
+
                     HttpResponseMessage response = client.GetAsync(strURL).Result;
 
                     if (response.IsSuccessStatusCode) {
@@ -50,6 +54,20 @@ namespace DollarQuote {
                     MessageBox.Show(error.Message);
                 }
                 
+            }
+        }
+
+        private void FrmDollarQuote_Load(object sender, EventArgs e) {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e) {
+
+            time += 3;
+
+            if(time >= 30) {
+
+                loadingScreen.Visible = false;
             }
         }
     }
