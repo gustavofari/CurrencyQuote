@@ -61,6 +61,7 @@
     <Compile Include="Market.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThemeColor.cs" />
     <EmbeddedResource Include="FrmDollarQuote.resx">
       <DependentUpon>FrmDollarQuote.cs</DependentUpon>
     </EmbeddedResource>
@@ -93,6 +94,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icon-loading-blue.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\icon-money.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
